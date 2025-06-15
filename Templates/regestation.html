@@ -63,7 +63,7 @@
 <body>
     <div class="form-container">
         
-        <form action="/register" method="POST">
+        <form action="registration-form" method="POST">
                {% csrf_token %}
                <h2>Registration Form</h2>
             <label for="username">Username:</label>
@@ -86,7 +86,8 @@
 
             
 
-            <input type="submit" value="Register">
+          <button type="submit" class="submit-btn">Sign Up</button>
+         <a href="{% url 'login' %}">I have an account</a>
         </form>
     </div>
 </body>

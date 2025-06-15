@@ -21,7 +21,9 @@ from user_author.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', home, name='home'),
-    path('loging/', loging, name='loging'),
-    path('regestation/', regestation, name='regestation'),
+   
+    path('', login, name='login'),
+    path('reg/', regestation, name='regestation'),
+    path('h/', home, name='home'),
+    
 ]
